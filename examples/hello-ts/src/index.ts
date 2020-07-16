@@ -3,7 +3,7 @@
  * @param n number of milliseconds before promise resolves
  */
 function timeout(n: number) {
-  return new Promise(res => setTimeout(res, n));
+	return new Promise(res => setTimeout(res, n));
 }
 
 /**
@@ -12,11 +12,11 @@ function timeout(n: number) {
  * @param b second
  */
 export async function addNumbers(a: number, b: number) {
-  await timeout(500);
-  return a + b;
+	await timeout(500);
+	return a + b;
 }
 
 //== Run the program ==//
 (async () => {
-  console.log(await addNumbers(3, 4));
+	console.log(await addNumbers(3, 4));
 })();
