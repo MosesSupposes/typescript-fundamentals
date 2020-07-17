@@ -104,12 +104,12 @@ dd = {
 };
 
 // (13) if we want to re-use this type, we can create an interface
-// interface Address {
-//   houseNumber: number;
-//   streetName?: string;
-// }
-// // and refer to it by name
-// let ee: Address = { houseNumber: 33 };
+interface Address {
+	houseNumber: number;
+	streetName?: string;
+}
+// and refer to it by name
+let ee: Address = { houseNumber: 33 };
 
 //== UNION & INTERSECTION ==//
 
